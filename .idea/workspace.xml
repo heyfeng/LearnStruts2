@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21e6a9c9-738a-4215-a044-2b40789f50e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ch1_structure.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/hello.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/action/HelloAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/action/LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/action/MessageAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/beans/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/struts2-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/struts2-1.0-SNAPSHOT/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/struts2-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/struts2-1.0-SNAPSHOT/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/error_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/index_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/login_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/message_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/success_jsp.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/struts2.iml" afterPath="$PROJECT_DIR$/struts2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/struts.xml" afterPath="$PROJECT_DIR$/target/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="21e6a9c9-738a-4215-a044-2b40789f50e5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +44,37 @@
               <first_editor relative-caret-position="810">
                 <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
                 <folding>
-                  <marker date="1493909914037" expanded="true" signature="310:430" ph="..." />
-                  <marker date="1493909914037" expanded="true" signature="886:1014" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="310:430" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="589:728" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="886:1014" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="1360:2156" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="1640:1913" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="1787:1897" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="1974:2144" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="2481:2890" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="2549:2880" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="2682:2865" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="2700:2790" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="3199:3301" ph="{...}" />
+                  <marker date="1493910226536" expanded="true" signature="3628:3823" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="3635:3739" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="3746:3815" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="3958:4133" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="3965:4032" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="4039:4125" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="4320:6722" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="4720:4790" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="4811:5715" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="4943:5094" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="5224:5395" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="5534:5694" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="5728:6711" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="5785:6698" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="5843:6678" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="6040:6656" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="6223:6306" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="6340:6623" ph="..." />
+                  <marker date="1493910226536" expanded="true" signature="6445:6589" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -103,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <element signature="n#filter-mapping#0;n#web-app#0;n#!!top" expanded="true" />
               </folding>
@@ -164,8 +167,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -809,7 +812,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding>
             <element signature="n#filter-mapping#0;n#web-app#0;n#!!top" expanded="true" />
           </folding>
@@ -838,8 +841,37 @@
           <first_editor relative-caret-position="810">
             <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
             <folding>
-              <marker date="1493909914037" expanded="true" signature="310:430" ph="..." />
-              <marker date="1493909914037" expanded="true" signature="886:1014" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="310:430" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="589:728" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="886:1014" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="1360:2156" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="1640:1913" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="1787:1897" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="1974:2144" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="2481:2890" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="2549:2880" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="2682:2865" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="2700:2790" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="3199:3301" ph="{...}" />
+              <marker date="1493910226536" expanded="true" signature="3628:3823" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="3635:3739" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="3746:3815" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="3958:4133" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="3965:4032" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="4039:4125" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="4320:6722" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="4720:4790" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="4811:5715" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="4943:5094" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="5224:5395" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="5534:5694" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="5728:6711" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="5785:6698" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="5843:6678" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="6040:6656" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="6223:6306" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="6340:6623" ph="..." />
+              <marker date="1493910226536" expanded="true" signature="6445:6589" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

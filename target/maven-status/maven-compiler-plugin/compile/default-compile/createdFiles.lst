@@ -1,4 +1,1 @@
-me\caofeng\action\HelloAction.class
-me\caofeng\action\MessageAction.class
-me\caofeng\action\LoginAction.class
-me\caofeng\beans\User.class
+me\caofeng\actions\HelloAction.class

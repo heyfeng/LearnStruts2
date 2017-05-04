@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -42,43 +42,15 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 登录</title>\r\n");
+      out.write("<title>Struts2 demo</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write(" <form action=\"loginAction\" method=\"post\">\r\n");
-      out.write("    <h2>登录</h2>\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"text\" name=\"user.name\" placeholder=\"用户名\"/>\r\n");
-      out.write("    </p>\r\n");
-      out.write("\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"password\" name=\"user.password\" placeholder=\"密码\">\r\n");
-      out.write("    </p>\r\n");
-      out.write("\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"submit\" value=\"登录\">\r\n");
-      out.write("    </p>\r\n");
-      out.write("</form>\r\n");
-      out.write("\r\n");
-      out.write("<form action=\"registerAction\" method=\"post\">\r\n");
-      out.write("    <h2>注册</h2>\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"text\" name=\"user.name\" placeholder=\"用户名\"/>\r\n");
-      out.write("    </p>\r\n");
-      out.write("\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"password\" name=\"user.password\" placeholder=\"密码\">\r\n");
-      out.write("    </p>\r\n");
-      out.write("\r\n");
-      out.write("    <p>\r\n");
-      out.write("        <input type=\"submit\" value=\"注册\">\r\n");
-      out.write("    </p>\r\n");
-      out.write("</form>\r\n");
+      out.write("    <h2> Hello World</h2>\r\n");
+      out.write("    <h2> welcome come Struts2</h2>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

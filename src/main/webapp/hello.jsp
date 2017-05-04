@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>欢迎</title>
+<title>Struts2 demo</title>
 </head>
 <body>
-
+    <h2> Hello World</h2>
+    <h2> welcome come Struts2</h2>
 </body>
 </html>

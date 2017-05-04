@@ -31,6 +31,14 @@
             <version>${struts2.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts-taglib -->
+        <!-- struts tag lib依赖-->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts-taglib</artifactId>
+            <version>1.3.10</version>
+        </dependency>
+
     </dependencies>
 
     <build>

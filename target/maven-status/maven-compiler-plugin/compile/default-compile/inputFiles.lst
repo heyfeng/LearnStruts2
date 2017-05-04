@@ -1,2 +1,4 @@
-D:\webproject\struts2\src\main\java\me\caofeng\servlet\HelloServlet.java
+D:\webproject\struts2\src\main\java\me\caofeng\beans\User.java
+D:\webproject\struts2\src\main\java\me\caofeng\action\LoginAction.java
 D:\webproject\struts2\src\main\java\me\caofeng\action\HelloAction.java
+D:\webproject\struts2\src\main\java\me\caofeng\action\MessageAction.java

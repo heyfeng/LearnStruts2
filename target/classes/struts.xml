@@ -19,12 +19,12 @@
         </action>
 
         <!--&lt;!&ndash; 登录 &ndash;&gt;-->
-        <!--<action name="login" class="me.caofeng.action.LoginAction" method="login">-->
-            <!--&lt;!&ndash; 返回结果设置 name接收动作返回的参数，/index.jsp 指定返回的视图&ndash;&gt;-->
-            <!--<result name="success">/success.jsp</result>-->
-            <!--<result name="input">/login.jsp</result>-->
-            <!--<result name="error">/error.jsp</result>-->
-        <!--</action>-->
+        <action name="login" class="me.caofeng.action.LoginAction" method="login">
+            <!-- 返回结果设置 name接收动作返回的参数，/index.jsp 指定返回的视图-->
+            <result name="success">/success.jsp</result>
+            <result name="input">/login.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
 
         <!--&lt;!&ndash; 注册 &ndash;&gt;-->
         <!--<action name="register" class="me.caofeng.action.LoginAction" method="register">-->

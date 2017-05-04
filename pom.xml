@@ -24,6 +24,7 @@
             <version>2.5</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts-core -->
         <!-- struts2依赖-->
         <dependency>
             <groupId>org.apache.struts</groupId>

@@ -10,5 +10,13 @@
             如果返回的结果和name匹配，则将相应的jsp页面返回个客户端-->
             <result name="success">/hello.jsp</result>
         </action>
+
+        <!-- 指定登录动作 登录动作名字为LoginAction -->
+        <action name="LoginAction" class="me.caofeng.actions.LoginAction">
+            <!-- 登录成功返回页面 -->
+            <result name="success">welcome.jsp</result>
+            <!-- 登录失败返回页面-->
+            <result name="error">loginError.jsp</result>
+        </action>
     </package>
 </struts>

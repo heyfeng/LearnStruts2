@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,11 +46,25 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title>Struts2 flow login</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
+      out.write("    <h2>登录</h2>\r\n");
+      out.write("\r\n");
+      out.write("    <!-- 指定登录的动作为LoginAction -->\r\n");
+      out.write("    <form action=\"LoginAction\" method=\"post\">\r\n");
+      out.write("        <p>\r\n");
+      out.write("            用户名<input type=\"text\" name=\"name\">\r\n");
+      out.write("        </p>\r\n");
+      out.write("\r\n");
+      out.write("        <p>\r\n");
+      out.write("            密码<input type=\"password\" name=\"password\">\r\n");
+      out.write("        </p>\r\n");
+      out.write("\r\n");
+      out.write("       <p>\r\n");
+      out.write("           <input type=\"submit\" value=\"登录\">\r\n");
+      out.write("       </p>\r\n");
+      out.write("    </form>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
       out.write("</html>");

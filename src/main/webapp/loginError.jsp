@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Struts2 demo</title>
+<title>Struts2 demo Login Failed</title>
 </head>
 <body>
-    <h2> Hello World</h2>
-    <h2> welcome come Struts2</h2>
-
+    <h2>login failed</h2>
+    <p>wrong username or password </p>
+    <p>hint username admin ,password 123</p>
+    <a href="login.jsp">登录</a>
 </body>
 </html>

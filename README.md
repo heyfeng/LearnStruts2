@@ -1,5 +1,5 @@
 # learn struts
-A simple Struts2 Web Application
+code and note for struts
 ## quick start
 ```
 git checkout ch1 

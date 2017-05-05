@@ -13,12 +13,13 @@ import com.opensymphony.xwork2.ActionSupport;
  * @Date: 2017-05-05 15:50
  * @Version: V1.0
  */
-public class POJOAction extends ActionSupport{
+public class POJOAction {
     public POJOAction(){
 
     }
-
     public String execute() throws Exception {
+        System.out.println("基于POJO实现 Action ");
         return  "success";
+
     }
 }

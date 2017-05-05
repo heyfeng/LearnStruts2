@@ -50,6 +50,19 @@ public final class pojo_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("    <h2> Pojo Action Result </h2>\r\n");
+      out.write("\r\n");
+      out.write("    <!-- 获取request中的message -->\r\n");
+      out.write("    <h2>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${requestScope.message}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("></h2>\r\n");
+      out.write("    <!-- 获取session中的message -->\r\n");
+      out.write("    <h2>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.message}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</h2>\r\n");
+      out.write("    <!-- 获取application中的message -->\r\n");
+      out.write("    <h2>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${applicationScope.message}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</h2>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

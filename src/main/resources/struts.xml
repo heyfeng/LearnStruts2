@@ -8,5 +8,17 @@
         <action name="PojoAction" class="me.caofeng.actions.POJOAction">
             <result name="success">/pojo.jsp</result>
         </action>
+
+        <!-- 实现Action接口来实现Action -->
+        <action name="SecondAction" class="me.caofeng.actions.SecondAction">
+            <result name="success">/second.jsp</result>
+        </action>
+
+        <!-- 继承ActionSupport实现的Action-->
+        <action name="ThirdAction" class="me.caofeng.actions.ThirdAction">
+            <result name="success">/third.jsp</result>
+
+        </action>
+
     </package>
 </struts>

@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <h2> Implements  Action interface Result </h2>
+    <h2> extends  ActionSupport  Result </h2>
     <!-- 获取request中的message -->
-    <h2>${requestScope.message}></h2>
+    <h2>${requestScope.message}</h2>
     <!-- 获取session中的message -->
     <h2>${sessionScope.message}</h2>
     <!-- 获取application中的message -->

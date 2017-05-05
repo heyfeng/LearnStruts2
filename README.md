@@ -1,3 +1,14 @@
+目录
+- [Action](#Action)
+  - [Action实现方式](#Action实现方式)
+    - [POJO实现](#POJO实现)
+    - [实现Action接口](#实现Actiion接口)
+    - [继承ActionSupport](#继承ActionSupport)
+  - [exceute()方法](#exceute()方法])
+  - [访问ServletAPI](#访问ServletAPI)
+    - [通过ActionContext访问](#通过ActionContext访问)
+    - [通过ServletActionContext](#通过ServletActionContext)
+    - [通过ServletActionContext](#通过ServletActionContext)
 # learn struts
 Action and Result
 ## Code
@@ -9,7 +20,7 @@ git checkout ch3
 - 为给定的请求做必要的准备
 - 数据交换中心
 - 帮助框架决定返回结果
-### Action实现
+### Action实现方式
 一般情况下，继承ActionSupport，重写exceute()。
 #### POJO实现
 可以使用Plain Ordianry Java Object实现，在POJO中，提供一个默认无参构造方法，以及一个execute()方法。

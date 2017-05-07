@@ -1,3 +1,9 @@
+me\caofeng\actions\DefaultAction.class
+me\caofeng\servlet\LoginServlet.class
 me\caofeng\actions\POJOAction.class
+me\caofeng\actions\LoginAction.class
 me\caofeng\actions\ThirdAction.class
+me\caofeng\beans\User.class
+me\caofeng\actions\ManyAction.class
+me\caofeng\actions\MethodAction.class
 me\caofeng\actions\SecondAction.class

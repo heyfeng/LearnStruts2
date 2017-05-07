@@ -9,6 +9,15 @@
     - [通过ActionContext访问](#通过ActionContext访问)
     - [通过ServletActionContext](#通过ServletActionContext)
     - [通过ServletActionContext](#通过ServletActionContext)
+  - [Action方法调用](#Action方法调用)
+    - [动态方法调用](#动态方法调用)
+    - [method调用](#method调用)
+    - [通配符调用](#通配符调用)
+  - [Action获取表单数据](#Action获取表单数据)
+    - [字段驱动](#字段驱动)
+    - [域对象字段驱动](#域对象该字段驱动)
+    - [域对象字段驱动](#域对象字段驱动)
+
 # learn struts
 Action and Result
 ## Code
@@ -105,5 +114,251 @@ public static PageContext getPageContext()
 ```
 - 实例代码
 见ThirdAction
-## Result
-Result是Action执行后返回的一个字符串，指示Action执行完成后要显示的页面。
+### Action方法调用
+一个Action里可以有多个方法处理用户请求,需要在struts.xml配置请求调用的方法。
+#### 动态方法调用
+struts.xml配置
+```xml
+<action name="Actio Name " class="class name ">
+  <result>result </result>
+</action>
+```
+调用，通过!连接Action和要执行的方法
+```xml
+url = ActioName!MethodName
+```
+使用动态调用，可以用URL执行Action的任意方法，会带来安全隐患。在配置文件中，可以配置禁止使用动态方法
+- 配置禁止使用动态方法
+```xml
+<constant name="struts.enable.DanamicMethodInvocation" value="false" />
+```
+#### method调用
+- 配置文件
+在action的配置文件总增加method
+```xml
+<!-- 调用默认的execute() -->
+<action name="MethodAction" class="me.caofeng.actions.MethodAction">
+    <result name="success">/methodResult.jsp</result>
+</action>
+
+<!-- 调用 getName()-->
+<action name="GetNameAction" class="me.caofeng.actions.MethodAction" method="getName">
+    <result name="success">/methodResult.jsp</result>
+</action>
+
+<!-- 调用 updateName()-->
+<action name="UpdateNameAction" class="me.caofeng.actions.MethodAction" method="updateName">
+    <result name="success">/methodResult.jsp</result>
+</action>
+```
+- Action
+```java
+public class MethodAction extends ActionSupport implements ServletRequestAware{
+
+    private HttpServletRequest request;
+
+    @Override
+    public String execute() throws Exception {
+        request.setAttribute("message"," default method execute() ");
+        return SUCCESS;
+    }
+
+
+    public String getName(){
+        request.setAttribute("message","getName() ,get name from server");
+        return SUCCESS;
+    }
+
+    public String updateName(){
+       request.setAttribute("message","updateName() ,update name ");
+       return SUCCESS;
+    }
+
+    public void setServletRequest(HttpServletRequest request) {
+        this.request = request;
+    }
+}
+```
+
+#### 通配符调用
+如果方法比较多，通过method配置会比较繁琐，可以使用通配符实现，减少配置数量。
+通配符类似于正则表达式，用(\*)来表示，用于配置0个或多个字符串，使用通配符要有统一的约定。
+- 配置文件
+```xml
+<!-- *可以有多个，用_连接 ，如name="*_* ,{1}表示取*号所代表的内容，有多个*号，按顺序取，如{1}，{2}-->
+<action name="*Action" class="me.caofeng.actions.ManyAction" method="{1}">
+    <result name="success">/methodResult.jsp</result>
+</action>
+```
+- Action
+```java
+public class ManyAction extends ActionSupport implements ServletRequestAware {
+    private HttpServletRequest request;
+
+    public void setServletRequest(HttpServletRequest request) {
+        this.request = request;
+    }
+
+    @Override
+    public String execute() throws Exception {
+        request.setAttribute("message", " default method execute() ");
+        return SUCCESS;
+    }
+
+    public String get() {
+        System.out.println("通配符调用get");
+        request.setAttribute("message", "通配符调用getName() ,get name from server");
+        return SUCCESS;
+    }
+
+    public String update() {
+        System.out.println("通配符调用update");
+        request.setAttribute("message", "通配符调用updateName() ,update name ");
+        return SUCCESS;
+    }
+
+}
+```
+### 配置默认Action
+配置默认Action，如果用户访问的Action不存在，则会转向默认Action
+- 配置
+```xml
+<default-action-ref name="DefaultAction"/>
+<action name="DefaultAction" class="me.caofeng.actions.DefaultAction">
+  <result name="success">/index.html</result>
+      <result name="error">/index.html</result>
+</action>
+```
+### Action获取表单数据
+Action用于处理用户请求，用户请求时，会携带一些参数，通过HTTP/HTTPS协议传输过来，放在请求URL中，如GET请求，或者在请求体中，如POST请求。web容器会将用户请求转换成一个HttpServletRequest对象，使用Servlet的时候，通过获取request对象来获取用户请求数据。在Struts2中，也可以通过request对象来获取用户请求数据，不过Struts2已经做了预处理,可以使用字段驱动方式，域对象字段驱动或模型驱动来获取用户请求参数。
+#### 字段驱动
+直接在Action中定义和form表单数据同名的字段，使这些字段同表单数据相对象。Struts核心控制器在处理时，会将其表单数据复制给这些同名字段。
+- Action
+```java
+public class LoginAction extends ActionSupport {
+    private String name;
+    private String password;
+
+    public LoginAction() {
+    }
+
+    public LoginAction(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+    //...gettter and settter
+    @Override
+    public String execute() throws Exception {
+        HttpServletRequest request = ServletActionContext.getRequest();
+        request.setAttribute("name", name);
+        request.setAttribute("password", password);
+        return SUCCESS;
+    }
+}
+```
+- from表单
+```html
+<form action="LoginAction" method="post">
+  <input type="text" name="name"/>
+  <input type="password" name="password"/>
+  <input type="submit" value="登录"/>
+</form>
+```
+#### 域对象字段驱动
+如果表单数据过多，使用字段驱动时，Action中会有很多字段，使得Action比较臃肿，可以将表单数据封装证一个对象，在Action中持有一个对象，Struts2会把表单数据映射到对象中。
+- Pojo对象
+```java
+public class User {
+    private String name;
+    private String password;
+
+    public User() {
+
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
+    //...getter and setteer
+}
+```
+- Action
+```java
+public class LoginAction extends ActionSupport {
+    private User user;
+    public LoginAction() {
+    }
+
+    public LoginAction(User user) {
+        this.user = user;
+    }
+
+    //..getter and setter
+
+    @Override
+  public String execute() throws Exception {
+      HttpServletRequest request = ServletActionContext.getRequest();
+      request.setAttribute("name", user.getName());
+      request.setAttribute("password", user.getPassword());
+      return SUCCESS;
+  }
+```
+- form表单
+需要将表单name属相指定为对象名.属性名。
+```html
+<form action="LoginAction" method="post">
+  <input type="text" name="user.name"/>
+  <input type="password" name="user.password"/>
+  <input type="submit" value="登录"/>
+</form>
+```
+#### 模型驱动
+实现ModelDriven<T>接口，将表单数据传递给Driven中的JavaBean对象，javaBean对象要提供默认无参构造方法。
+- Pojo对象
+```java
+public class User {
+    private String name;
+    private String password;
+
+    public User() {
+
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+    //...getter and setteer
+}
+```
+- Action
+public class LoginAction extends ActionSupport implements ModelDriven<User> {
+
+    // 需要创建一个型的对象
+    private User user = new User();
+    public LoginAction() {
+    }
+
+    @Override
+    public String execute() throws Exception {
+        HttpServletRequest request = ServletActionContext.getRequest();
+        request.setAttribute("name", user.getName());
+        request.setAttribute("password", user.getPassword());
+        return SUCCESS;
+    }
+
+    @Override
+    public User getModel() {
+        return user;
+    }
+}
+- form表单
+```html
+<form action="LoginAction" method="post">
+  <input type="text" name="name"/>
+  <input type="password" name="password"/>
+  <input type="submit" value="登录"/>
+</form>
+```

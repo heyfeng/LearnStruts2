@@ -3,7 +3,16 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="DefaultAction"/>
+        
+        <action name="DefaultAction" class="me.caofeng.actions.DefaultAction">
+            <result name="success">/index.html</result>
+            <result name="error">/index.html</result>
+        </action>
+
+
         <!-- 基于POJO实现Action -->
         <action name="PojoAction" class="me.caofeng.actions.POJOAction">
             <result name="success">/pojo.jsp</result>
@@ -19,6 +28,29 @@
             <result name="success">/third.jsp</result>
 
         </action>
+
+        <!-- 调用默认的execute() -->
+        <action name="MethodAction" class="me.caofeng.actions.MethodAction">
+            <result name="success">/methodResult.jsp</result>
+        </action>
+
+        <!-- 调用 getName()-->
+        <action name="GetNameAction" class="me.caofeng.actions.MethodAction" method="getName">
+            <result name="success">/methodResult.jsp</result>
+        </action>
+
+        <!-- 调用 updateName()-->
+        <action name="UpdateNameAction" class="me.caofeng.actions.MethodAction" method="updateName">
+            <result name="success">/methodResult.jsp</result>
+        </action>
+
+        <action name="LoginAction" class="me.caofeng.actions.LoginAction">
+           <result name="success" >loginSuccess.jsp</result>
+        </action>
+        <!-- *可以有多个，用_连接 ，如name="*_* ,{1}表示取*号所代表的内容，有多个*号，按顺序取，如{1}，{2}-->
+        <!--<action name="*Action" class="me.caofeng.actions.ManyAction" method="{1}">-->
+            <!--<result name="success">/methodResult.jsp</result>-->
+        <!--</action>-->
 
     </package>
 </struts>

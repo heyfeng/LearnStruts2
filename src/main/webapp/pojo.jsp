@@ -10,10 +10,11 @@
     <h2> Pojo Action Result </h2>
 
     <!-- 获取request中的message -->
-    <h2>${requestScope.message}></h2>
+    <h2>${requestScope.message}</h2>
     <!-- 获取session中的message -->
     <h2>${sessionScope.message}</h2>
     <!-- 获取application中的message -->
     <h2>${applicationScope.message}</h2>
+    <h2>${sessionScope.delete}</h2>
 </body>
 </html>

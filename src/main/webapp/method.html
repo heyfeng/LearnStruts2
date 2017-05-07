@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Struts2 deme method</title>
+</head>
+<body>
+<h2>一个Action配置多个方法</h2>
+<h2> Method Action</h2>
+<div>
+    <div>
+        <a href="/MethodAction">/MethodAction访问默认方法</a>
+    </div>
+    <div>
+        <a href="/GetNameAction">/GetNameAction访问getName()方法</a>
+    </div>
+    <div>
+        <a href="/UpdateNameAction">/UpdateNameAction访问updateName()方法</a>
+    </div>
+</div>
+
+
+<h2>Action代码</h2>
+<pre>
+  public class MethodAction extends ActionSupport implements ServletRequestAware{
+
+    private HttpServletRequest request;
+
+    /**
+     * @Author:曹峰 blog.caofeng.me
+     * @Date: 2017/5/6 0:57
+     * @Description: 默认用来处理用户请求的方法
+    */
+    @Override
+    public String execute() throws Exception {
+        request.setAttribute("message"," default method execute() ");
+        return SUCCESS;
+    }
+
+
+    public String getName(){
+        request.setAttribute("message","getName() ,get name from server");
+        return SUCCESS;
+    }
+
+    public String updateName(){
+       request.setAttribute("message","updateName() ,update name ");
+       return SUCCESS;
+    }
+
+    public void setServletRequest(HttpServletRequest request) {
+        this.request = request;
+    }
+}
+    </pre>
+
+
+</body>
+</html>

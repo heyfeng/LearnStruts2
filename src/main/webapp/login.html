@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Struts2 Demo Login</title>
+</head>
+<body>
+<div>
+    <div>
+        <p>通过Servlet登录</p>
+        <form method="get" action="login">
+            <caption>通过get登录,看URL地址</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <form method="post" action="login">
+            <caption>通过post登录，看调试工具</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+    <div>
+        <p>通过Struts2 Action登录 ,使用字段驱动获或模型驱动取表单数据</p>
+        <form method="get" action="LoginAction">
+            <caption>通过get登录,看URL地址</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <form method="post" action="LoginAction">
+            <caption>通过post登录,看URL地址</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+    <div>
+        <p>通过Struts2 Action登录 ,使用域对象字段驱动获取表单数据</p>
+        <form method="get" action="LoginAction">
+            <caption>通过get登录,看URL地址</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="user.name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="user.password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <form method="post" action="LoginAction">
+            <caption>通过post登录,看URL地址</caption>
+            <table>
+                <tr>
+                    <th>用户名</th>
+                    <td>
+                        <input type="text" name="user.name">
+                    </td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td>
+                        <input type="password" name="user.password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+</div>
+</body>
+
+</html>

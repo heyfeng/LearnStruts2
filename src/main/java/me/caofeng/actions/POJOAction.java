@@ -33,4 +33,16 @@ public class POJOAction {
         return  "success";
 
     }
+
+    /**
+     * @Author:曹峰 blog.caofeng.me
+     * @Date: 2017/5/6 0:18
+     * @Description: 删除动作，默认不调用个，可以使用动态方法调用
+    */
+    public String delete(){
+        ActionContext  context = ActionContext.getContext();
+        System.out.println("使用动态方法调用执行删除操作");
+        context.getSession().put("delete","动态调用delete()成功");
+        return  "success";
+    }
 }

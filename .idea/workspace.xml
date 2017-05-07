@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21e6a9c9-738a-4215-a044-2b40789f50e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/DefaultAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/LoginAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/ManyAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/MethodAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/beans/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/servlet/LoginServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/loginSuccess.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/method.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/methodResult.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/pojo_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/third_jsp.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/actions/POJOAction.class" afterPath="$PROJECT_DIR$/target/classes/me/caofeng/actions/POJOAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/actions/SecondAction.class" afterPath="$PROJECT_DIR$/target/classes/me/caofeng/actions/SecondAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/caofeng/actions/ThirdAction.class" afterPath="$PROJECT_DIR$/target/classes/me/caofeng/actions/ThirdAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/POJOAction.java" afterPath="$PROJECT_DIR$/src/main/java/me/caofeng/actions/POJOAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pojo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pojo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/struts2.iml" afterPath="$PROJECT_DIR$/struts2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/struts.xml" afterPath="$PROJECT_DIR$/target/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+            <state relative-caret-position="339">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="n#action#7;n#package#0;n#struts#0;n#!!top" expanded="true" />
               </folding>
@@ -68,14 +42,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="74" column="1" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
+            <state relative-caret-position="315">
+              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding>
-                <element signature="e#532#558#0" expanded="false" />
-                <element signature="e#687#724#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#LoginAction#0" expanded="true" />
+                <element signature="method#LoginAction#0;class#LoginAction#0" expanded="true" />
+                <element signature="method#execute#0;class#LoginAction#0" expanded="true" />
                 <element signature="e#1671#1672#0" expanded="true" />
                 <element signature="e#1698#1699#0" expanded="true" />
               </folding>
@@ -281,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/actions/ThirtdAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/actions/SecondAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/second.jsp" />
@@ -298,11 +273,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/loginSucces.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/beans/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/actions/LoginAction.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
       </list>
     </option>
   </component>
@@ -870,16 +846,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/loginError.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="524">
-            <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/struts-core/1.3.10/struts-core-1.3.10.jar!/org/apache/struts/action/Action.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1002,16 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
-          <folding>
-            <element signature="n#action#7;n#package#0;n#struts#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -1113,12 +1069,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/ThirdAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;class#LoginAction#0" expanded="true" />
+            <element signature="method#LoginAction#0;class#LoginAction#0" expanded="true" />
+            <element signature="method#execute#0;class#LoginAction#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3105">
+            <caret line="339" column="6" lean-forward="false" selection-start-line="339" selection-start-column="6" selection-end-line="339" selection-end-column="6" />
+            <folding>
+              <marker date="1494145750914" expanded="true" signature="969:977" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="1023:1106" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="3226:3290" ph="..." />
+              <marker date="1494145750914" expanded="true" signature="3399:3463" ph="..." />
+              <marker date="1494145750914" expanded="true" signature="3581:3645" ph="..." />
+              <marker date="1494145750914" expanded="true" signature="3849:3950" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="3980:4086" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="4118:4217" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="4280:4291" ph=" { " />
+              <marker date="1494145750914" expanded="true" signature="4314:4320" ph=" }" />
+              <marker date="1494145750914" expanded="true" signature="4852:4863" ph=" { " />
+              <marker date="1494145750914" expanded="true" signature="4886:4892" ph=" }" />
+              <marker date="1494145750914" expanded="true" signature="4953:5055" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="5081:5233" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="5262:5412" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="5600:5704" ph="..." />
+              <marker date="1494145750914" expanded="true" signature="6196:6203" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="6258:6325" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="6414:6613" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="7023:7031" ph="{...}" />
+              <marker date="1494145750914" expanded="true" signature="7079:7146" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/beans/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;class#User#0" expanded="true" />
+            <element signature="method#User#0;class#User#0" expanded="true" />
+            <element signature="method#User#1;class#User#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="method#toString#0;class#User#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1146,36 +1161,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/beans/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/ThirdAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="405">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
-            <element signature="docComment;class#User#0" expanded="true" />
-            <element signature="method#User#0;class#User#0" expanded="true" />
-            <element signature="method#User#1;class#User#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="method#toString#0;class#User#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/LoginAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="74" column="1" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="339">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <element signature="e#532#558#0" expanded="false" />
-            <element signature="e#687#724#0" expanded="false" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="n#action#7;n#package#0;n#struts#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

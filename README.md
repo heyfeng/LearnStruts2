@@ -17,7 +17,8 @@
     - [字段驱动](#字段驱动)
     - [域对象字段驱动](#域对象该字段驱动)
     - [域对象字段驱动](#域对象字段驱动)
-
+- [Result](#Result)
+ - [ResultType](#ResultType)
 # learn struts
 Action and Result
 ## Code
@@ -361,4 +362,42 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
   <input type="password" name="password"/>
   <input type="submit" value="登录"/>
 </form>
+```
+## Result
+Action 处理完成后，返回一个Result(String对象),然后由Struts2根据返回结果返回响应视图。
+- 配置
+```xml
+<result name="NAME" type="TYPE">LOCATION</result>
+```
+### ResultType
+Struts预定了一些ResultType ,用于返回不同的模型视图。
+#### dispcher
+请求转发，默认ResultType,实际上是调用Servlet中的RequestDispatcher的forwar()方法转发请求，将request对象转发给jsp或servlet做法处理。
+#### redirect
+请求从定向,定向到jsp或servlet，实际上是调用Servlet中HttpServletReponse中的sendRedirect()。
+#### redirectAction
+请求从定向，定向到Action,同redirect原理一样。
+#### chain
+将请求链接到另一个Action中继续查询，保留前一个Action的数据
+- 配置文件
+```xml
+<action name="loginAction" class="me.caofeng.actions.LoginAction">
+    <result name="toSecond" type="chain">
+        <param name="actionName">secondAction</param>
+    </result>
+</action>
+
+<action name="secondAction" class="me.caofeng.actions.SecondAction">
+    <result name="success">/index.html</result>
+</action>
+```
+### Result分类
+#### 局部Reuslt
+定义在Action内，是Action的子元素，作用范围为单个Action
+#### 全局Result
+定义在package元素的<global-results>子元素下，作用范围是整个包。
+```xml
+<global-results>
+    <result name="input">/login.jsp</result>
+</global-results>
 ```

@@ -47,6 +47,8 @@
         <action name="LoginAction" class="me.caofeng.actions.LoginAction">
            <result name="success" >loginSuccess.jsp</result>
         </action>
+        
+
         <!-- *可以有多个，用_连接 ，如name="*_* ,{1}表示取*号所代表的内容，有多个*号，按顺序取，如{1}，{2}-->
         <!--<action name="*Action" class="me.caofeng.actions.ManyAction" method="{1}">-->
             <!--<result name="success">/methodResult.jsp</result>-->

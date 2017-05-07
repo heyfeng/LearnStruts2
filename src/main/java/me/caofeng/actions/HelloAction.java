@@ -24,4 +24,18 @@ public class HelloAction extends ActionSupport{
         //表示处理成功
         return SUCCESS;
     }
+    /**
+     * @Author:曹峰 blog.caofeng.me
+     * @Date: 2017/5/7 20:35
+     * @Description: 测试拦截部分方法，不拦截get()
+    */
+    public String get(){
+        System.out.println("get() 不拦截");
+        return SUCCESS;
+    }
+
+    public String update(){
+        System.out.println("update(),拦截");
+        return SUCCESS;
+    }
 }

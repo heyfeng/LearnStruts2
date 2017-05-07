@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class welcome_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,14 +46,13 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title>Struts2 Demo Welcome</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
-      out.write("    <p>message from interceptor : ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${requestScope.message}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("\r\n");
+      out.write("    <h2> welcome to Struts2 Demo</h2>\r\n");
+      out.write("    <p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("，你好</p>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

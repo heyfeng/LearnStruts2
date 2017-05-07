@@ -1,2 +1,7 @@
+D:\webproject\struts2\src\main\java\me\caofeng\interceptor\SecondInterceptor.java
 D:\webproject\struts2\src\main\java\me\caofeng\interceptor\TimeInterceptor.java
+D:\webproject\struts2\src\main\java\me\caofeng\interceptor\AuthorInterceptor.java
 D:\webproject\struts2\src\main\java\me\caofeng\actions\HelloAction.java
+D:\webproject\struts2\src\main\java\me\caofeng\interceptor\MethodInterceptor.java
+D:\webproject\struts2\src\main\java\me\caofeng\actions\WelcomeAction.java
+D:\webproject\struts2\src\main\java\me\caofeng\actions\LoginAction.java

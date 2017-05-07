@@ -15,17 +15,19 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
  */
 public class TimeInterceptor extends AbstractInterceptor{
 
+    @Override
     public String intercept(ActionInvocation invocation) throws Exception {
         //记录系统当前时间
         long start = System.currentTimeMillis();
-        System.out.println("Action开始 " + start );
+        System.out.println(" 时间拦截器开始 " + start );
         String result = invocation.invoke();
         //记录系统当前时间
         long end = System.currentTimeMillis();
-        System.out.println("Action结束 " + end);
+        System.out.println(" 时间拦截器结束 " + end);
         //计算Action执行时间
         long time = end - start;
         System.out.println("Action执行时间 " + time + " ms ");
-        return result;
+        System.out.println("Action执行结果 " + result);
+        return "success";
     }
 }

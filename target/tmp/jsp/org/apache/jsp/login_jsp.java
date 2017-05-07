@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,14 +46,27 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title>Struts2 demo Login</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
-      out.write("    <p>message from interceptor : ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${requestScope.message}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("    <h2>Struts2 Demo Login</h2>\r\n");
+      out.write("    <p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${sessionScope.tip}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("<p>\r\n");
+      out.write("    <form action=\"login\" method=\"post\">\r\n");
+      out.write("       <p>\r\n");
+      out.write("           <input type=\"text\" name=\"name\" placeholder=\"输入用户名\">\r\n");
+      out.write("       </p>\r\n");
       out.write("\r\n");
+      out.write("        <p>\r\n");
+      out.write("            <input type=\"password\" name=\"password\" placeholder=\"请输入密码\">\r\n");
+      out.write("        </p>\r\n");
+      out.write("\r\n");
+      out.write("        <p>\r\n");
+      out.write("            <input type=\"submit\" value=\"登录\">\r\n");
+      out.write("        </p>\r\n");
+      out.write("\r\n");
+      out.write("    </form>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Struts2 demo</title>
+<title>Struts2 Demo Welcome</title>
 </head>
 <body>
-    <h2> Hello World</h2>
-    <h2> welcome come Struts2</h2>
-    <p>message from interceptor : ${requestScope.message}
+    <h2> welcome to Struts2 Demo</h2>
+    <p>${sessionScope.name}，你好</p>
 </body>
 </html>

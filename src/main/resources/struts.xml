@@ -3,22 +3,52 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-    
+
     <package name="default" namespace="/" extends="struts-default">
         <!-- 定义拦截器-->
         <interceptors>
+            <interceptor-stack name="SmallStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="TimeInterceptor"/>
+                <interceptor-ref name="SecondInterceptor"/>
+                <interceptor-ref name="MethodInterceptor">
+                    <param name="includeMethods">update</param>
+                </interceptor-ref>
+            </interceptor-stack>
+            
             <!-- name 指定拦截器的名字 class指定拦截器对应的类,拦截器具体实现-->
             <interceptor name="TimeInterceptor" class="me.caofeng.interceptor.TimeInterceptor"/>
+            <interceptor name="SecondInterceptor" class="me.caofeng.interceptor.SecondInterceptor"/>
+            <interceptor name="MethodInterceptor" class="me.caofeng.interceptor.MethodInterceptor"/>
+            <interceptor name="AuthorInterceptor" class="me.caofeng.interceptor.AuthorInterceptor"/>
         </interceptors>
         <!-- 配置动作 name指定动作的名称，在jsp或html中读访问的地址，class指定动作的实现类-->
         <action name="HelloAction" class="me.caofeng.actions.HelloAction">
             <!-- 实现逻辑视图和物理视图的映射 action要返回一个字符串，name指定接收的字符串名字，
             如果返回的结果和name匹配，则将相应的jsp页面返回个客户端-->
             <result name="success">/hello.jsp</result>
-            <!-- 使用Struts2 默认拦截器，Struts2有很多默认拦截器，而且Struts2的很多工作都是由拦截器实现的-->
-            <interceptor-ref name="defaultStack"/>
-            <!-- 应用自定义的拦截器 -->
-            <interceptor-ref name="TimeInterceptor"/>
+            <!-- 使用拦截器栈-->
+            <interceptor-ref name="SmallStack"/>
+        </action>
+
+        <action name="GetAction" class="me.caofeng.actions.HelloAction" method="get">
+            <result name="success">/hello.jsp</result>
+            <interceptor-ref name="SmallStack"/>
+        </action>
+
+        <action name="UpdateAction" class="me.caofeng.actions.HelloAction" method="update">
+            <result name="success">/hello.jsp</result>
+            <interceptor-ref name="SmallStack"/>
+        </action>
+
+        <action name="login" class="me.caofeng.actions.LoginAction">
+            <result name="success">/WEB-INF/welcome.jsp</result>
+        </action>
+
+        <action name="WelcomeAction" class="me.caofeng.actions.WelcomeAction">
+            <result name="login">/login.jsp</result>
+            <result name="success">/WEB-INF/welcome.jsp</result>
+            <interceptor-ref name="AuthorInterceptor"/>
         </action>
     </package>
 </struts>

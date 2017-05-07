@@ -1,2 +1,7 @@
-me\caofeng\actions\HelloAction.class
 me\caofeng\interceptor\TimeInterceptor.class
+me\caofeng\interceptor\MethodInterceptor.class
+me\caofeng\interceptor\AuthorInterceptor.class
+me\caofeng\actions\WelcomeAction.class
+me\caofeng\actions\HelloAction.class
+me\caofeng\actions\LoginAction.class
+me\caofeng\interceptor\SecondInterceptor.class

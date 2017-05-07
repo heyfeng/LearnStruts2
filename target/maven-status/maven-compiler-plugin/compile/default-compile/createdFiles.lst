@@ -1,1 +1,5 @@
 me\caofeng\actions\HelloAction.class
+me\caofeng\beans\Book.class
+me\caofeng\actions\RegisterAction.class
+me\caofeng\beans\User.class
+me\caofeng\service\BookService.class

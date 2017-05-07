@@ -13,7 +13,7 @@ Struts2 Architechture and basic flow.Struts2 架构和基本流程。
 ### flow(执行流程)
 1. 用户发起请求，Web容器接收到请求，将请求传递给一个标准的过滤器链，包括Action ContextCleanUp过滤器和其他过滤器。然后调用Struts2 的FitlerDispatcher(在2.1.3后，改成了StrutsPrepareAndExecuteFilter,即在web.xml中配置的Structs2核心控制器).
 核心控制器调用ActionMapper,确定要调用的Action。
-2. 雀帝你个要调用Action后，AcitonProxy获得控制权，ActionProxy调用ConfigurationManager读取配置文件，根据配置信息创建ActionInvocation,由Struts2开始处理请求。按配置文件，先后执行拦截器，控制器。
+2. 确定要调用Action后，AcitonProxy获得控制权，ActionProxy调用ConfigurationManager读取配置文件，根据配置信息创建ActionInvocation,由Struts2开始处理请求。按配置文件，先后执行拦截器，控制器。
 3. 控制器Action执行结束后，要返回一个字符串，ActionInvocation根据返回结果查找对用得Result ,然后执行Result
 4. 拦截器再次被执行，顺序与执行Action前相反(和Servlet的Filter执行过程相似)，最后结果返回给web.xml中配置的过滤器。
 ### model detail (模块说明)

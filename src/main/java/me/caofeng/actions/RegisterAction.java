@@ -5,7 +5,7 @@ import com.opensymphony.xwork2.ModelDriven;
 import me.caofeng.beans.User;
 import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * Copyright © 2017曹峰. All rights reserved.

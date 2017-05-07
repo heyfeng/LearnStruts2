@@ -13,5 +13,10 @@
     <p>gender ${user.gender}<p>
     <p>protocol ${user.protocol}<p>
     <p>agree ${user.agree}<p>
+    <p>love${user.activity}</p>
+    <p>music${user.music}</p>
+    <p>book${user.book}</p>
+    <p>address: ${user.province} - ${user.city}</p>
+    <p>喜欢的水果${user.fruit}</p>
 </body>
 </html>

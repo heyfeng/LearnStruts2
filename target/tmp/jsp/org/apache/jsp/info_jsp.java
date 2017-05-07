@@ -67,6 +67,23 @@ public final class info_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <p>agree ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.agree}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("<p>\r\n");
+      out.write("    <p>love");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.activity}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>music");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.music}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>book");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.book}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>address: ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.province}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" - ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.city}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>喜欢的水果");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${user.fruit}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

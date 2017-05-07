@@ -12,7 +12,7 @@ git checkout ch2
 ```
 git checkout ch3
 ```
-## [Interceptor](#Interceptor)
+## [Interceptor](https://github.com/buniaowanfeng/LearnStruts2/tree/ch4)
 ```
 git checkout ch4
 ```

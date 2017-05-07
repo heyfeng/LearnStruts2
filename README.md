@@ -36,7 +36,6 @@ git checkout ch5
 |required|xhtml|Boolean|设置表单是否必填|
 |requiredPosition|xhtml|String|设置必填标记相对于label的位置|
 ### 简单表单标签
-例子，见register.jsp
 |标签|HTML对应标签|说明|
 |--|--|--|
 |<s:form>|form|表单标签|
@@ -68,6 +67,7 @@ git checkout ch5
 |value|false|无|String|下拉选择框的值|
 ### <s:optgroup>下拉组合列表
 下拉列表分组，必须在下列表中使用
+
 |属性名|是否必须|默认值|类型|说明|
 |--|--|--|--|--|
 |label|false|无|String|分组名字|
@@ -76,6 +76,7 @@ git checkout ch5
 |listValue|false|无|String|分组显示文本|
 ### <s:doubleSelect> 两级联动选择
 两级联动选择框,必须在form表单中
+
 |属性名|是否必须|默认值|类型|说明|
 |--|--|--|--|--|
 |label|false|无|String|选择框名字|
@@ -91,6 +92,7 @@ git checkout ch5
 防止刷新时多次提交，是一个隐藏域
 ### <s:updownselect>列表选择框
 列表选择框和按钮组合
+
 |属性名|是否必须|默认值|类型|说明|
 |--|--|--|--|--|
 |label|false|无|String|组合选择框的名字|

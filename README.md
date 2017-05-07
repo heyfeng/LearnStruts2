@@ -16,3 +16,7 @@ git checkout ch3
 ```
 git checkout ch4
 ```
+## [Struts-tag](https://github.com/buniaowanfeng/LearnStruts2/tree/ch5)
+```
+git checkout ch5
+```

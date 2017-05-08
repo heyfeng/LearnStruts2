@@ -119,3 +119,109 @@ git checkout ch5
 |selectAllLabel|false|无|String|全选|
 |doubleName|false|无|String|右边框的键|
 |doubleLists|true|无|String|右边框的数据
+## 控制标签
+### 条件分支if，elseif,else
+使用和Java条件分支一样。
+```xml
+<s:if test="条件表达式1">
+  <p>标签内容</p>
+</s:if>
+<s:elseif test="条件表达式2">
+	<p>标签内容</p>
+</s:elseif>
+<s:else>
+	<p>标签内容</p>
+</s:else>
+```
+### 迭代<s:iterator>
+对集合数据进行迭代，集合包含List，Set,数组，Map
+
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|value|true|无|String|需要迭代的数据|
+|var|false|无|String|设置集合元素的名字,在设置值的时候要用到|
+|status|false|无|String|获取单点迭代元素的属性，比如是否是最后一个，索引|
+|Begin|false|无|String|开始迭代的位置|
+|End|false|无|String|结束迭代的位置|
+|Step|false|无|String|迭代的步长|
+### 添加<s:append>
+将多个集合组合起来，组成一个新的集合，要指定var属性，组合时，按顺序将集合依次组合。
+```xml
+<s:append var="NAME">
+    <s:param value="{}" ></param>
+    ...更多参数
+</s:append>
+```
+
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|var|true|无|String|组合器的名字|
+|param value|true|无|String|参与组合的数据|
+### 拼接<s:merge>
+将多个集合拼接在一起，先拼接各个集合的第一个元素，然后第二个元素，以此类推。
+
+```xml
+<s:merge var="NAME">
+    <s:param value="{}" ></param>
+    ...更多参数
+</s:merge>
+```
+
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|var|true|无|String|组合器的名字|
+|param value|true|无|String|参与组合的数据|
+
+###  排序<s:sort>
+自定义比较器，对数据进行排序
+
+
+```xml
+<s:bean id="COMPARATORNAME" name="comparator class" />
+<s:sort comparator="#COMPARATORNAME"
+        id="ID"
+        source="{}"/>
+```
+
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|comparator|true|无|String|自定义的比较器，实现comparator接口|
+|id|false|无|String|比较器ID|
+|source|false|无|String|要排序的数据|
+
+### 分割<s:generator>
+```xml
+<s:generator separator="," val="'北京,天津,上海,重庆'" id="city"/>
+```
+
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|separator|true|无|String|分割符号|
+|val|true|无|String|要分割的字符串|
+|converter|false|无|String|转换器|
+|id|false|无|String|指定生成的集合保存到pageContext中|
+|count|false|无|String|指定生成集合的数量|
+
+### 子集<s:subset>
+```xml
+<s:subset source="{'北京','上海','天津','重庆'}" var="city" start="1" count="3"/>
+```
+|属性名|是否必须|默认值|类型|说明|
+|--|--|--|--|--|
+|source|false|无|String|原数据|
+|var|false|无|String|指定生成的集合保存到pageContext中|
+|count|false|无|String|子集的数量|
+|start|false|无|String|子集开始索引|
+## 数据标签
+用于数据访问和Action调用
+
+|标签|说明|
+|--|--|
+|<s:action>|调用Action|
+|<s:property>|输出value属性的值|
+|<s:param>|为其他标签提供参数|
+|<s:bean>|在JSP页面创建JavaBean实例|
+|<s:date>|格式化输出时间或日期|
+|<s:set>|定义一个新的变量|
+|<s:url>|生成URL地址|
+|<s:include>|包含其他页面，类似JSPinlcude指令或动作|

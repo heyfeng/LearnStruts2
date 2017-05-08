@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21e6a9c9-738a-4215-a044-2b40789f50e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,15 +17,60 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="974">
-                <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <first_editor relative-caret-position="135">
+                <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+              <folding>
+                <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#webApp#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#connectors#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#connector#0;n#connectors#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#configuration#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <marker date="1494244671914" expanded="true" signature="591:597" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/hello.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,9 +115,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -461,6 +506,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -469,6 +515,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -649,8 +696,22 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding>
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#webApp#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#connectors#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#connector#0;n#connectors#0;n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#configuration#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,8 +755,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/caofeng/actions/HelloAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="291">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1494244671914" expanded="true" signature="591:597" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -709,16 +773,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/hello.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="481">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="974">
-            <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <first_editor relative-caret-position="135">
+            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />

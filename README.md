@@ -21,7 +21,10 @@ git checkout ch4
 git checkout ch5
 ```
 ## [OGNL,Object Graph Navigation Language Basic](https://github.com/buniaowanfeng/LearnStruts2/tree/ch6)
-
 ```
 git checkout ch6
+```
+## [Validate frame](https://github.com/buniaowanfeng/LearnStruts2/tree/ch7)
+```
+git checkout ch7
 ```

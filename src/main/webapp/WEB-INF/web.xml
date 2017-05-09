@@ -4,6 +4,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>me.caofeng.servlets.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
     <!-- 配置Struts 2框架的核心控制器 -->
     <filter>
         <!-- 配置Struts 2核心控制器的名字 -->
@@ -19,8 +29,12 @@
         <!-- 过滤器拦截名称-->
         <filter-name>struts2</filter-name>
         <!-- 配置拦截规则，拦截所有用户请求 -->
-        <url-pattern>/*</url-pattern>
+        <url-pattern>*.action</url-pattern>
     </filter-mapping>
 
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
 
 </web-app>

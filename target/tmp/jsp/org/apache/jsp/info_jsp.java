@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class info_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,11 +46,28 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title>Struts2 Demo Register</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
+      out.write("    <center>\r\n");
+      out.write("    <h2>Struts Demo Welcome</h2>\r\n");
+      out.write("    <p>注册信息</p>\r\n");
+      out.write("    <p>用户名 ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>密码 ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${password}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>确认密码 ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${repassword}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>手机号 ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${phone}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>邮箱 ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${email}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    </center>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

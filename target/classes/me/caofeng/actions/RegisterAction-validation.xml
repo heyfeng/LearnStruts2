@@ -1,0 +1,91 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+    <!-- 对用户进行验证-->
+    <field name="name">
+        <!-- 验证类型 字段是否可以为空 -->
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <!-- 错误提示信息-->
+            <message>用户名不能为空</message>
+        </field-validator>
+
+        <!-- 验证类型 字段长度 -->
+        <field-validator type="stringlength">
+            <!-- 最大长度-->
+            <param name="maxLength">15</param>
+            <!-- 最小长度-->
+            <param name="minLength">6</param>
+            <message>用户名长度为6-15个字符</message>
+        </field-validator>
+
+
+    </field>
+
+    <!-- 对用户输入的密码进行验证 -->
+    <field name="password">
+        <!-- 验证类型 字段是否可以为空 -->
+        <field-validator type="requiredstring">
+            <message>密码不能为空</message>
+        </field-validator>
+
+        <!-- 验证类型 字段长度 -->
+        <field-validator type="stringlength">
+            <!-- 最小长度-->
+            <param name="minLength">6</param>
+            <message>密码最小长度为${minLength}</message>
+        </field-validator>
+    </field>
+
+    <!-- 对用户输入的确认密码进行验证 -->
+    <field name="repassword">
+        <!-- 验证类型 字段是否可以为空 -->
+        <field-validator type="requiredstring">
+            <message>确认密码不能为空</message>
+        </field-validator>
+
+        <!-- 验证类型 字段长度 -->
+        <field-validator type="stringlength">
+            <!-- 最小长度-->
+            <param name="minLength">6</param>
+            <message>确认密码最小长度为${minLength}</message>
+        </field-validator>
+
+        <!-- 验证类型 使用表达式 -->
+        <field-validator type="fieldexpression">
+            <!-- 最小长度-->
+            <param name="expression">password == repassword</param>
+            <message>密码和确认密码不一致</message>
+        </field-validator>
+    </field>
+
+    <field name="phone">
+        <!-- 验证类型 字段是否可以为空 -->
+        <field-validator type="requiredstring">
+            <message>手机号不能为空</message>
+        </field-validator>
+
+        <field-validator type="regex">
+            <param name="trimExpression"><![CDATA[(\w{4,10})]]></param>
+            <message>手机号要在4-10位之间</message>
+        </field-validator>
+        <!-- 使用正则表达式 -->
+        <field-validator type="regex">
+            <param name="regex">^((13[0-9])|(14[5|7|9])|(15([0-3]|[5-9]))|(17[0|5|6|7|8|])|(18[0-9]))\d{8}$</param>
+            <message>手机号格式错误</message>
+        </field-validator>
+    </field>
+
+    <field name="email">
+        <!-- 验证类型 字段是否可以为空 -->
+        <field-validator type="requiredstring">
+            <message>邮箱不能为空</message>
+        </field-validator>
+
+        <field-validator type="email">
+            <message>邮箱格式不正确</message>
+        </field-validator>
+    </field>
+
+
+</validators>

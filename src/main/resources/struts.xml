@@ -5,10 +5,22 @@
 <struts>
     <package name="default" namespace="/" extends="struts-default">
         <!-- 配置动作 name指定动作的名称，在jsp或html中读访问的地址，class指定动作的实现类-->
-        <action name="HelloAction" class="me.caofeng.actions.HelloAction">
+        <action name="hello" class="me.caofeng.actions.HelloAction">
             <!-- 实现逻辑视图和物理视图的映射 action要返回一个字符串，name指定接收的字符串名字，
             如果返回的结果和name匹配，则将相应的jsp页面返回个客户端-->
             <result name="success">/hello.jsp</result>
         </action>
+        <action name="login" class="me.caofeng.actions.LoginAction" method="login">
+            <result name="success">/success.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+
+        <action name="register" class="me.caofeng.actions.RegisterAction" >
+            <result name="success">/info.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+
+
     </package>
+
 </struts>

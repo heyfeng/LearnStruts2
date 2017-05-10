@@ -12,7 +12,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @Date: 2017-05-04 23:01
  * @Version: V1.0
  */
-public class HelloAction extends ActionSupport{
+public class HelloAction extends ActionSupport {
     /**
      * @Author:曹峰 blog.caofeng.me
      * @Date: 2017/5/4 22:18
@@ -24,4 +24,6 @@ public class HelloAction extends ActionSupport{
         //表示处理成功
         return SUCCESS;
     }
+
+
 }

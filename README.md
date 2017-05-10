@@ -28,11 +28,11 @@ git checkout ch6
 ```
 git checkout ch7
 ```
-## [File Upload And Download](https://github.com/buniaowanfeng/LearnStruts2/tree/ch7)
+## [File Upload And Download](https://github.com/buniaowanfeng/LearnStruts2/tree/ch8)
 ```
 git checkout ch8
 ```
-## [Ajax In Struts2](https://github.com/buniaowanfeng/LearnStruts2/tree/ch7)
+## [Ajax In Struts2](https://github.com/buniaowanfeng/LearnStruts2/tree/ch9)
 ```html
 git checkout ch9
 ```

@@ -32,3 +32,8 @@ git checkout ch7
 ```
 git checkout ch8
 ```
+## [Ajax In Struts2](https://github.com/buniaowanfeng/LearnStruts2/tree/ch7)
+```html
+git checkout ch9
+```
+

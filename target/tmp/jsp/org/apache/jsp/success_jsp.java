@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class success_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,11 +46,16 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title>Struts2 Demo Success</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
+      out.write("    <h2>Upload Success</h2>\r\n");
+      out.write("    <p>文件名");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${uploadFileName}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
+      out.write("    <p>文件类型");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${uploadContentType}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

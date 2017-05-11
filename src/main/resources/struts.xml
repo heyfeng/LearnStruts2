@@ -10,5 +10,10 @@
             如果返回的结果和name匹配，则将相应的jsp页面返回个客户端-->
             <result name="success">/hello.jsp</result>
         </action>
+        
+        <action name="users" class="me.caofeng.actions.UserAction" method="users">
+            <result name="users">/users.jsp</result>
+        </action>
+
     </package>
 </struts>

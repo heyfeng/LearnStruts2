@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class users_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,11 +46,26 @@ public final class hello_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Struts2 demo</title>\r\n");
+      out.write("<title> 注册用户 </title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <h2> Hello World</h2>\r\n");
-      out.write("    <h2> welcome come Struts2</h2>\r\n");
+      out.write("    <div align=\"center\">\r\n");
+      out.write("        <h3>\r\n");
+      out.write("            <font color=\"blue\">用户信息列表</font>\r\n");
+      out.write("        </h3>\r\n");
+      out.write("\r\n");
+      out.write("        <table width=\"620\">\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <td align=\"right\">增加用户</td>\r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("        <table width=\"640\" border=\"1\" align=\"center\" bordercolor=\"#99ccff\">\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <td align=\"right\">增加用户</td>\r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </div>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

@@ -1,0 +1,1466 @@
+[DEBUG]:[20170511 01:51:56]:[TestLog4j.logger(TestLog4j.java:20)]:[test logger ]
+
+[DEBUG]:[20170511 01:56:35]:[TestDbHelper.testConnection(TestDbHelper.java:28)]:[jdbc:mysql://localhost:3306/demo?useUnicode=true&autoReconnect=true&rewriteBatchedStatements=TRUE&useSSL=false, UserName=root@localhost, MySQL Connector Java]
+
+[DEBUG]:[20170511 08:35:19]:[TestDbHelper.testConnection(TestDbHelper.java:28)]:[jdbc:mysql://localhost:3306/demo?useUnicode=true&autoReconnect=true&rewriteBatchedStatements=TRUE&useSSL=false, UserName=root@localhost, MySQL Connector Java]
+
+[DEBUG]:[20170511 09:56:39]:[me.caofeng.dao.UserDao.addUser(UserDao.java:127)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  INSERT INTO user (name,gender,age,phone,email,major,school,address) values ('不鸟万峰','男',23,'18612692454','buniaowanfeng@outlook.com','CS','MIT','广州')]
+
+[DEBUG]:[20170511 09:56:53]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 1 ]
+
+[DEBUG]:[20170511 09:57:22]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 1 ]
+
+[DEBUG]:[20170511 09:57:34]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 1 ]
+
+[DEBUG]:[20170511 09:57:34]:[TestUserDao.getUser(TestUserDao.java:41)]:[User{id=1, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='MIT', address='广州'}]
+
+[DEBUG]:[20170511 09:58:01]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 09:58:50]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 09:58:50]:[TestUserDao.getAllUser(TestUserDao.java:36)]:[1 不鸟万峰 18612692454]
+
+[DEBUG]:[20170511 10:11:59]:[me.caofeng.dao.UserDao.deleteUser(UserDao.java:154)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478: DELETE FROM user WHERE id = 1  ]
+
+[DEBUG]:[20170511 10:18:49]:[me.caofeng.dao.UserDao.addUser(UserDao.java:127)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  INSERT INTO user (name,gender,age,phone,email,major,school,address) values ('不鸟万峰','男',23,'18612692454','buniaowanfeng@outlook.com','CS','MIT','广州')]
+
+[DEBUG]:[20170511 10:18:57]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:18:57]:[TestUserDao.getAllUser(TestUserDao.java:36)]:[2 不鸟万峰 18612692454]
+
+[DEBUG]:[20170511 10:19:11]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:19:11]:[TestUserDao.getUser(TestUserDao.java:44)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='MIT', address='广州'}]
+
+[DEBUG]:[20170511 10:20:36]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[ERROR]:[20170511 10:20:36]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:158)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:20:36]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[java.sql.SQLException: Parameter index out of range (8 > number of parameters, which is 7).]
+
+[DEBUG]:[20170511 10:22:10]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[ERROR]:[20170511 10:22:10]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:158)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:22:10]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[java.sql.SQLException: Parameter index out of range (8 > number of parameters, which is 7).]
+
+[DEBUG]:[20170511 10:23:47]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[ERROR]:[20170511 10:23:47]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:158)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:23:47]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？，major' in 'field list']
+
+[DEBUG]:[20170511 10:24:12]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[ERROR]:[20170511 10:24:12]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:24:12]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:160)]:[java.sql.SQLException: Parameter index out of range (8 > number of parameters, which is 7).]
+
+[DEBUG]:[20170511 10:24:29]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:24:29]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:156)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = ？，major = 'buniaowanfeng@outlook.com' ,school = 'CS' ,address = 'IMUST' ]
+
+[ERROR]:[20170511 10:24:29]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:24:29]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:160)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？，major' in 'field list']
+
+[DEBUG]:[20170511 10:25:22]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[ERROR]:[20170511 10:25:22]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:161)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:25:22]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[java.sql.SQLException: Parameter index out of range (9 > number of parameters, which is 8).]
+
+[DEBUG]:[20170511 10:25:48]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:25:48]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:158)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = ？，major = 'buniaowanfeng@outlook.com' ,school = 'CS' ,address = 'IMUST'  WHERE id = 2 ]
+
+[ERROR]:[20170511 10:25:48]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:161)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:25:48]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？，major' in 'field list']
+
+[DEBUG]:[20170511 10:27:11]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:27:11]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:143)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:27:11]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = ？，major = 'buniaowanfeng@outlook.com' ,school = 'CS' ,address = 'IMUST'  WHERE id = 2 ]
+
+[ERROR]:[20170511 10:27:11]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:27:11]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:163)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？，major' in 'field list']
+
+[DEBUG]:[20170511 10:28:03]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:28:03]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:143)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:28:03]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = ？，major = 'buniaowanfeng@outlook.com' ,school = 'CS' ,address = 'IMUST'  WHERE id = 2 ]
+
+[ERROR]:[20170511 10:28:03]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:28:03]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:163)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？，major' in 'field list']
+
+[DEBUG]:[20170511 10:29:25]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:29:25]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:143)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:29:25]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = ？, major = 'buniaowanfeng@outlook.com' ,school = 'CS' ,address = 'IMUST'  WHERE id = 2 ]
+
+[ERROR]:[20170511 10:29:25]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:29:25]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:163)]:[com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '？' in 'field list']
+
+[DEBUG]:[20170511 10:30:04]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:30:04]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:143)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:30:04]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = 'buniaowanfeng@outlook.com' , major = 'CS' ,school = 'IMUST' ,address = 2  WHERE id = ** NOT SPECIFIED ** ]
+
+[ERROR]:[20170511 10:30:04]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:162)]:[更新用户信息失败]
+
+[ERROR]:[20170511 10:30:04]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:163)]:[java.sql.SQLException: No value specified for parameter 9]
+
+[DEBUG]:[20170511 10:30:23]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:30:23]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:143)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:30:23]:[me.caofeng.dao.UserDao.updateUser(UserDao.java:159)]:[com.mysql.jdbc.JDBC42PreparedStatement@13c78c0b:  UPDATE user set name = '不鸟万峰' , gender = '男' ,age = 23 , phone = '18612692454' , email = 'buniaowanfeng@outlook.com' , major = 'CS' ,school = 'IMUST' ,address = '广州'  WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:30:52]:[me.caofeng.dao.UserDao.getUserById(UserDao.java:77)]:[com.mysql.jdbc.JDBC42PreparedStatement@735b478:  SELECT * FROM user WHERE id = 2 ]
+
+[DEBUG]:[20170511 10:30:52]:[TestUserDao.getUser(TestUserDao.java:45)]:[User{id=2, name='不鸟万峰', gender='男', age=23, phone='18612692454', email='buniaowanfeng@outlook.com', major='CS', school='IMUST', address='广州'}]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-default.xml]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: jar:file:/C:/Users/PVer/.m2/repository/org/apache/struts/struts2-core/2.3.15.1/struts2-core-2.3.15.1.jar!/struts-default.xml]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts-default.xml]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-default.xml]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:xwork impl:com.opensymphony.xwork2.ObjectFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ObjectFactory name:struts impl:org.apache.struts2.impl.StrutsObjectFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManager name:system impl:com.opensymphony.xwork2.util.fs.DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:xwork impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:struts impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:xwork impl:com.opensymphony.xwork2.DefaultActionProxyFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:struts impl:org.apache.struts2.impl.StrutsActionProxyFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:tiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:notiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:struts impl:com.opensymphony.xwork2.util.WildcardHelper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:namedVariable impl:com.opensymphony.xwork2.util.NamedVariablePatternMatcher]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:regex impl:org.apache.struts2.util.RegexPatternMatcher]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:struts impl:org.apache.struts2.dispatcher.mapper.DefaultActionMapper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:composite impl:org.apache.struts2.dispatcher.mapper.CompositeActionMapper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful impl:org.apache.struts2.dispatcher.mapper.RestfulActionMapper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful2 impl:org.apache.struts2.dispatcher.mapper.Restful2ActionMapper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:struts impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:jakarta impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.TagLibrary name:s impl:org.apache.struts2.views.DefaultTagLibrary]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:struts impl:org.apache.struts2.views.freemarker.FreemarkerManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Unable to load optional class: org.apache.struts2.views.velocity.VelocityManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.components.template.TemplateEngineManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:ftl impl:org.apache.struts2.components.template.FreemarkerTemplateEngine]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:vm impl:org.apache.struts2.components.template.VelocityTemplateEngine]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:jsp impl:org.apache.struts2.components.template.JspTemplateEngine]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.XWorkConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.XWorkConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionPropertiesProcessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionFileProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionFileProcessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionAnnotationProcessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterCreator name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterCreator]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterHolder name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterHolder]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.conversion.impl.XWorkBasicConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.CollectionConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.CollectionConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.ArrayConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.ArrayConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.DateConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.DateConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.NumberConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.NumberConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.StringConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.StringConverter]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:struts impl:com.opensymphony.xwork2.TextProviderSupport]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.LocaleProvider name:struts impl:com.opensymphony.xwork2.DefaultLocaleProvider]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.UrlRenderer name:struts impl:org.apache.struts2.components.ServletUrlRenderer]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.util.UrlHelper name:struts impl:org.apache.struts2.views.util.DefaultUrlHelper]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.ValueStackFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlValueStackFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionProvider name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionProvider]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionContextFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionContextFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:system impl:com.opensymphony.xwork2.DefaultTextProvider]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.NullHandler name:java.lang.Object impl:com.opensymphony.xwork2.conversion.impl.InstantiatingNullHandler]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:struts impl:com.opensymphony.xwork2.validator.AnnotationActionValidatorManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:no-annotations impl:com.opensymphony.xwork2.validator.DefaultActionValidatorManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFactory name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFactory]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFileParser name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFileParser]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.ognl.OgnlUtil]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.TextParser name:struts impl:com.opensymphony.xwork2.util.OgnlTextParser]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.ObjectAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Iterator impl:com.opensymphony.xwork2.ognl.accessor.XWorkIteratorPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Enumeration impl:com.opensymphony.xwork2.ognl.accessor.XWorkEnumerationAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.List impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Set impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Map impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Collection impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.ognl.ObjectProxy impl:com.opensymphony.xwork2.ognl.accessor.ObjectProxyPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.views.jsp.ui.OgnlTool]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.StaticContentLoader name:struts impl:org.apache.struts2.dispatcher.DefaultStaticContentLoader]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.UnknownHandlerManager name:struts impl:com.opensymphony.xwork2.DefaultUnknownHandlerManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.ArrayList impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashSet impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashMap impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-plugin.xml]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Unable to locate configuration files of the name struts-plugin.xml, skipping]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-plugin.xml]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts.xml]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: file:/D:/webproject/struts2/target/classes/struts.xml]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts.xml]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts.xml]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[struts.properties missing]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Choosing bean (struts) for (org.apache.struts2.views.velocity.VelocityManager) to be loaded from the ObjectFactory]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)]
+
+[INFO]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Added default resource bundle 'org/apache/struts2/struts-messages' to default resource bundles = [org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:struts-default namespace: parents:[]}]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading validator definitions.]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:default namespace:/ parents:[{PackageConfig Name:struts-default namespace: parents:[]}]}]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded //HelloAction in 'default' package:{ActionConfig HelloAction (me.caofeng.actions.HelloAction) - action - file:/D:/webproject/struts2/target/classes/struts.xml:8:75}]
+
+[DEBUG]:[20170511 10:38:17]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cleaning up resources used to init Dispatcher]
+
+[DEBUG]:[20170511 10:38:45]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Checking ConfigurationProviders for reload.]
+
+[DEBUG]:[20170511 10:38:45]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Updating [reloadXmlConfiguration], current value is [false], new value [false]]
+
+[DEBUG]:[20170511 10:38:45]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@6d9f3d6c], property=struts]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-default.xml]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: jar:file:/C:/Users/PVer/.m2/repository/org/apache/struts/struts2-core/2.3.15.1/struts2-core-2.3.15.1.jar!/struts-default.xml]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts-default.xml]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-default.xml]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:xwork impl:com.opensymphony.xwork2.ObjectFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ObjectFactory name:struts impl:org.apache.struts2.impl.StrutsObjectFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManager name:system impl:com.opensymphony.xwork2.util.fs.DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:xwork impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:struts impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:xwork impl:com.opensymphony.xwork2.DefaultActionProxyFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:struts impl:org.apache.struts2.impl.StrutsActionProxyFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:tiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:notiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:struts impl:com.opensymphony.xwork2.util.WildcardHelper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:namedVariable impl:com.opensymphony.xwork2.util.NamedVariablePatternMatcher]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:regex impl:org.apache.struts2.util.RegexPatternMatcher]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:struts impl:org.apache.struts2.dispatcher.mapper.DefaultActionMapper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:composite impl:org.apache.struts2.dispatcher.mapper.CompositeActionMapper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful impl:org.apache.struts2.dispatcher.mapper.RestfulActionMapper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful2 impl:org.apache.struts2.dispatcher.mapper.Restful2ActionMapper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:struts impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:jakarta impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.TagLibrary name:s impl:org.apache.struts2.views.DefaultTagLibrary]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:struts impl:org.apache.struts2.views.freemarker.FreemarkerManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Unable to load optional class: org.apache.struts2.views.velocity.VelocityManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.components.template.TemplateEngineManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:ftl impl:org.apache.struts2.components.template.FreemarkerTemplateEngine]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:vm impl:org.apache.struts2.components.template.VelocityTemplateEngine]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:jsp impl:org.apache.struts2.components.template.JspTemplateEngine]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.XWorkConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.XWorkConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionPropertiesProcessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionFileProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionFileProcessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionAnnotationProcessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterCreator name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterCreator]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterHolder name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterHolder]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.conversion.impl.XWorkBasicConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.CollectionConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.CollectionConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.ArrayConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.ArrayConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.DateConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.DateConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.NumberConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.NumberConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.StringConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.StringConverter]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:struts impl:com.opensymphony.xwork2.TextProviderSupport]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.LocaleProvider name:struts impl:com.opensymphony.xwork2.DefaultLocaleProvider]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.UrlRenderer name:struts impl:org.apache.struts2.components.ServletUrlRenderer]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.util.UrlHelper name:struts impl:org.apache.struts2.views.util.DefaultUrlHelper]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.ValueStackFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlValueStackFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionProvider name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionProvider]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionContextFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionContextFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:system impl:com.opensymphony.xwork2.DefaultTextProvider]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.NullHandler name:java.lang.Object impl:com.opensymphony.xwork2.conversion.impl.InstantiatingNullHandler]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:struts impl:com.opensymphony.xwork2.validator.AnnotationActionValidatorManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:no-annotations impl:com.opensymphony.xwork2.validator.DefaultActionValidatorManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFactory name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFactory]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFileParser name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFileParser]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.ognl.OgnlUtil]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.TextParser name:struts impl:com.opensymphony.xwork2.util.OgnlTextParser]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.ObjectAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Iterator impl:com.opensymphony.xwork2.ognl.accessor.XWorkIteratorPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Enumeration impl:com.opensymphony.xwork2.ognl.accessor.XWorkEnumerationAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.List impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Set impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Map impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Collection impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.ognl.ObjectProxy impl:com.opensymphony.xwork2.ognl.accessor.ObjectProxyPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.views.jsp.ui.OgnlTool]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.StaticContentLoader name:struts impl:org.apache.struts2.dispatcher.DefaultStaticContentLoader]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.UnknownHandlerManager name:struts impl:com.opensymphony.xwork2.DefaultUnknownHandlerManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.ArrayList impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashSet impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashMap impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-plugin.xml]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Unable to locate configuration files of the name struts-plugin.xml, skipping]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-plugin.xml]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts.xml]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: file:/D:/webproject/struts2/target/classes/struts.xml]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts.xml]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts.xml]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[struts.properties missing]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Choosing bean (struts) for (org.apache.struts2.views.velocity.VelocityManager) to be loaded from the ObjectFactory]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)]
+
+[INFO]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Added default resource bundle 'org/apache/struts2/struts-messages' to default resource bundles = [org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:struts-default namespace: parents:[]}]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading validator definitions.]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:default namespace:/ parents:[{PackageConfig Name:struts-default namespace: parents:[]}]}]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded //HelloAction in 'default' package:{ActionConfig HelloAction (me.caofeng.actions.HelloAction) - action - file:/D:/webproject/struts2/target/classes/struts.xml:8:75}]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded //users in 'default' package:{ActionConfig users (me.caofeng.actions.UserAction.users()) - action - file:/D:/webproject/struts2/target/classes/struts.xml:14:83}]
+
+[DEBUG]:[20170511 10:46:55]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cleaning up resources used to init Dispatcher]
+
+[DEBUG]:[20170511 10:47:23]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Checking ConfigurationProviders for reload.]
+
+[DEBUG]:[20170511 10:47:23]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Updating [reloadXmlConfiguration], current value is [false], new value [false]]
+
+[DEBUG]:[20170511 10:47:23]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@501fd10a], property=struts]]
+
+[DEBUG]:[20170511 10:47:46]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@501fd10a], property=struts]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-default.xml]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: jar:file:/C:/Users/PVer/.m2/repository/org/apache/struts/struts2-core/2.3.15.1/struts2-core-2.3.15.1.jar!/struts-default.xml]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts-default.xml]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-default.xml]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:xwork impl:com.opensymphony.xwork2.ObjectFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ObjectFactory name:struts impl:org.apache.struts2.impl.StrutsObjectFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManager name:system impl:com.opensymphony.xwork2.util.fs.DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:xwork impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.FileManagerFactory name:struts impl:com.opensymphony.xwork2.util.fs.DefaultFileManagerFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:xwork impl:com.opensymphony.xwork2.DefaultActionProxyFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.ActionProxyFactory name:struts impl:org.apache.struts2.impl.StrutsActionProxyFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:tiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:notiger impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ObjectTypeDeterminer name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultObjectTypeDeterminer]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:struts impl:com.opensymphony.xwork2.util.WildcardHelper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:namedVariable impl:com.opensymphony.xwork2.util.NamedVariablePatternMatcher]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.PatternMatcher name:regex impl:org.apache.struts2.util.RegexPatternMatcher]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:struts impl:org.apache.struts2.dispatcher.mapper.DefaultActionMapper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:composite impl:org.apache.struts2.dispatcher.mapper.CompositeActionMapper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful impl:org.apache.struts2.dispatcher.mapper.RestfulActionMapper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.mapper.ActionMapper name:restful2 impl:org.apache.struts2.dispatcher.mapper.Restful2ActionMapper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:struts impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.multipart.MultiPartRequest name:jakarta impl:org.apache.struts2.dispatcher.multipart.JakartaMultiPartRequest]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.TagLibrary name:s impl:org.apache.struts2.views.DefaultTagLibrary]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:struts impl:org.apache.struts2.views.freemarker.FreemarkerManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Unable to load optional class: org.apache.struts2.views.velocity.VelocityManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.components.template.TemplateEngineManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:ftl impl:org.apache.struts2.components.template.FreemarkerTemplateEngine]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:vm impl:org.apache.struts2.components.template.VelocityTemplateEngine]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.template.TemplateEngine name:jsp impl:org.apache.struts2.components.template.JspTemplateEngine]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.XWorkConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.XWorkConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionPropertiesProcessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionFileProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionFileProcessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultConversionAnnotationProcessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterCreator name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterCreator]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.TypeConverterHolder name:struts impl:com.opensymphony.xwork2.conversion.impl.DefaultTypeConverterHolder]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.conversion.impl.XWorkBasicConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.CollectionConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.CollectionConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.ArrayConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.ArrayConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.DateConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.DateConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.NumberConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.NumberConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.impl.StringConverter name:struts impl:com.opensymphony.xwork2.conversion.impl.StringConverter]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:struts impl:com.opensymphony.xwork2.TextProviderSupport]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.LocaleProvider name:struts impl:com.opensymphony.xwork2.DefaultLocaleProvider]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.components.UrlRenderer name:struts impl:org.apache.struts2.components.ServletUrlRenderer]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.views.util.UrlHelper name:struts impl:org.apache.struts2.views.util.DefaultUrlHelper]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.ValueStackFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlValueStackFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionProvider name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionProvider]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.reflection.ReflectionContextFactory name:struts impl:com.opensymphony.xwork2.ognl.OgnlReflectionContextFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.TextProvider name:system impl:com.opensymphony.xwork2.DefaultTextProvider]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.conversion.NullHandler name:java.lang.Object impl:com.opensymphony.xwork2.conversion.impl.InstantiatingNullHandler]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:struts impl:com.opensymphony.xwork2.validator.AnnotationActionValidatorManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ActionValidatorManager name:no-annotations impl:com.opensymphony.xwork2.validator.DefaultActionValidatorManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFactory name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFactory]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.validator.ValidatorFileParser name:default impl:com.opensymphony.xwork2.validator.DefaultValidatorFileParser]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:com.opensymphony.xwork2.ognl.OgnlUtil]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.util.TextParser name:struts impl:com.opensymphony.xwork2.util.OgnlTextParser]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.ObjectAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Iterator impl:com.opensymphony.xwork2.ognl.accessor.XWorkIteratorPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Enumeration impl:com.opensymphony.xwork2.ognl.accessor.XWorkEnumerationAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.List impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Set impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Map impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.Collection impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:com.opensymphony.xwork2.ognl.ObjectProxy impl:com.opensymphony.xwork2.ognl.accessor.ObjectProxyPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:java.lang.Object impl:com.opensymphony.xwork2.ognl.accessor.XWorkMethodAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.MethodAccessor name:com.opensymphony.xwork2.util.CompoundRoot impl:com.opensymphony.xwork2.ognl.accessor.CompoundRootAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type: name:default impl:org.apache.struts2.views.jsp.ui.OgnlTool]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:org.apache.struts2.dispatcher.StaticContentLoader name:struts impl:org.apache.struts2.dispatcher.DefaultStaticContentLoader]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:com.opensymphony.xwork2.UnknownHandlerManager name:struts impl:com.opensymphony.xwork2.DefaultUnknownHandlerManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.ArrayList impl:com.opensymphony.xwork2.ognl.accessor.XWorkListPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashSet impl:com.opensymphony.xwork2.ognl.accessor.XWorkCollectionPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded type:ognl.PropertyAccessor name:java.util.HashMap impl:com.opensymphony.xwork2.ognl.accessor.XWorkMapPropertyAccessor]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts-plugin.xml]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Unable to locate configuration files of the name struts-plugin.xml, skipping]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts-plugin.xml]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading action configurations from: struts.xml]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating revision for URL: file:/D:/webproject/struts2/target/classes/struts.xml]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded action configuration from: struts.xml]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Parsing configuration file [struts.xml]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[struts.properties missing]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Choosing bean (struts) for (org.apache.struts2.views.velocity.VelocityManager) to be loaded from the ObjectFactory]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)]
+
+[INFO]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(CommonsLogger.java:42)]:[Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Added default resource bundle 'org/apache/struts2/struts-messages' to default resource bundles = [org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:struts-default namespace: parents:[]}]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loading validator definitions.]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[new I18nInterceptor()]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Found following implementations of FileManager interface: [system, jboss]]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[No user defined FileManager, looking up for internal implementations!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.vfs.VirtualFile] class, not a JBoss 7!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cannot load [org.jboss.virtual.VirtualFile] class, not a JBoss 5!]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Using default implementation of FileManager provided under name [system]: DefaultFileManager]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded [BUILDER] {PackageConfig Name:default namespace:/ parents:[{PackageConfig Name:struts-default namespace: parents:[]}]}]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded //HelloAction in 'default' package:{ActionConfig HelloAction (me.caofeng.actions.HelloAction) - action - file:/D:/webproject/struts2/target/classes/struts.xml:8:75}]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Loaded //users in 'default' package:{ActionConfig users (me.caofeng.actions.UserAction.users()) - action - file:/D:/webproject/struts2/target/classes/struts.xml:14:83}]
+
+[DEBUG]:[20170511 10:48:30]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Cleaning up resources used to init Dispatcher]
+
+[DEBUG]:[20170511 10:48:50]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Checking ConfigurationProviders for reload.]
+
+[DEBUG]:[20170511 10:48:50]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Updating [reloadXmlConfiguration], current value is [false], new value [false]]
+
+[DEBUG]:[20170511 10:48:50]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating an DefaultActionProxy for namespace [/] and action name [users]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept '//users' {]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[applied invocation context locale=en_US]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[before Locale=en_US]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@157881b2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Bypassing //users]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting static parameters {}]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params NONE]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params ]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Validating //users with method users.]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Invoking validate() on action me.caofeng.actions.UserAction@157881b2]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateUsers] in action [me.caofeng.actions.UserAction@157881b2]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateDoUsers] in action [me.caofeng.actions.UserAction@157881b2]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Executing action method = users]
+
+[DEBUG]:[20170511 10:48:51]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@79fef7b8: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Forwarding to location /users.jsp]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@157881b2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:48:51]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@157881b2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=org]]
+
+[DEBUG]:[20170511 10:48:52]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[after Locale=en_US]
+
+[DEBUG]:[20170511 10:48:52]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept } ]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating an DefaultActionProxy for namespace [/] and action name [users]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept '//users' {]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[applied invocation context locale=en_US]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[before Locale=en_US]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@1b4b59a9, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Bypassing //users]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting static parameters {}]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params NONE]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params ]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Validating //users with method users.]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Invoking validate() on action me.caofeng.actions.UserAction@1b4b59a9]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateUsers] in action [me.caofeng.actions.UserAction@1b4b59a9]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateDoUsers] in action [me.caofeng.actions.UserAction@1b4b59a9]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Executing action method = users]
+
+[DEBUG]:[20170511 10:52:00]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@158ca4b0: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Forwarding to location /users.jsp]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@1b4b59a9, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@1b4b59a9, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=org]]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[after Locale=en_US]
+
+[DEBUG]:[20170511 10:52:00]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept } ]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating an DefaultActionProxy for namespace [/] and action name [users]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept '//users' {]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[applied invocation context locale=en_US]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[before Locale=en_US]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@3e38f3a2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Bypassing //users]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting static parameters {}]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params NONE]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params ]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Validating //users with method users.]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Invoking validate() on action me.caofeng.actions.UserAction@3e38f3a2]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateUsers] in action [me.caofeng.actions.UserAction@3e38f3a2]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateDoUsers] in action [me.caofeng.actions.UserAction@3e38f3a2]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Executing action method = users]
+
+[DEBUG]:[20170511 10:52:33]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@7df20d80: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Forwarding to location /users.jsp]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@3e38f3a2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@3e38f3a2, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=org]]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[after Locale=en_US]
+
+[DEBUG]:[20170511 10:52:33]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept } ]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating an DefaultActionProxy for namespace [/] and action name [users]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept '//users' {]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[applied invocation context locale=en_US]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[before Locale=en_US]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@5f70c485, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Bypassing //users]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting static parameters {}]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params NONE]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params ]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Validating //users with method users.]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Invoking validate() on action me.caofeng.actions.UserAction@5f70c485]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateUsers] in action [me.caofeng.actions.UserAction@5f70c485]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateDoUsers] in action [me.caofeng.actions.UserAction@5f70c485]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Executing action method = users]
+
+[DEBUG]:[20170511 10:53:13]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@37aacbe3: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Forwarding to location /users.jsp]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@5f70c485, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:53:13]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@5f70c485, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=org]]
+
+[DEBUG]:[20170511 10:53:14]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[after Locale=en_US]
+
+[DEBUG]:[20170511 10:53:14]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept } ]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Creating an DefaultActionProxy for namespace [/] and action name [users]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept '//users' {]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[applied invocation context locale=en_US]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[before Locale=en_US]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@6c894bbf, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Bypassing //users]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting static parameters {}]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params NONE]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Setting params ]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Validating //users with method users.]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Invoking validate() on action me.caofeng.actions.UserAction@6c894bbf]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateUsers] in action [me.caofeng.actions.UserAction@6c894bbf]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[cannot find method [validateDoUsers] in action [me.caofeng.actions.UserAction@6c894bbf]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Executing action method = users]
+
+[DEBUG]:[20170511 10:54:53]:[me.caofeng.dao.UserDao.getAllUser(UserDao.java:43)]:[com.mysql.jdbc.JDBC42PreparedStatement@127e5e2: SELECT id , name , phone FROM user ORDER BY id ]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Forwarding to location /users.jsp]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@6c894bbf, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=struts]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[Entering nullPropertyValue [target=[me.caofeng.actions.UserAction@6c894bbf, com.opensymphony.xwork2.DefaultTextProvider@9105b9d], property=org]]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:76)]:[after Locale=en_US]
+
+[DEBUG]:[20170511 10:54:53]:[com.opensymphony.xwork2.util.logging.commons.CommonsLogger.debug(CommonsLogger.java:72)]:[intercept } ]
+
